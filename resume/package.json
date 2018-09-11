@@ -1,0 +1,29 @@
+{
+  "name": "resume-maker",
+  "version": "1.0.0",
+  "description": "Generate a JIS standard resume (for JP) from the config file.",
+  "bin": {
+    "make-jp-resume": "bin/index.js"
+  },
+  "scripts": {
+    "make-jp-resume": "node bin/index.js",
+    "test": "./node_modules/.bin/mocha",
+    "lint": "./node_modules/.bin/eslint lib/*"
+  },
+  "author": "PruneMazui",
+  "repository": "https://github.com/PruneMazui/resume-maker",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "html-pdf": "^2.2.0"
+  },
+  "main": "lib/make-jp-resume.js",
+  "engines": {
+    "node": ">=6.9.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^6.0.1",
+    "mocha": "^5.1.1"
+  }
+}
